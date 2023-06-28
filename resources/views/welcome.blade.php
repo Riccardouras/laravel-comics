@@ -12,4 +12,12 @@
     </div>
 
 </div>
+<div>
+    @foreach ($comic as $comics)
+    <div>
+        {{$comics["title"]}}
+        <img src="{{$comics["thumb"]}}" alt="{{$comics["title"]}}">
+    </div>
+    @endforeach
+</div>
 @endsection
